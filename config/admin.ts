@@ -10,11 +10,6 @@ export default ({ env }) => ({
       salt: env('TRANSFER_TOKEN_SALT'),
     },
   },
-  secrets: {
-    encryptionKey: env('ENCRYPTION_KEY'),
-  },
-  flags: {
-    nps: env.bool('FLAG_NPS', true),
-    promoteEE: env.bool('FLAG_PROMOTE_EE', true),
-  },
+  url: env('PUBLIC_ADMIN_URL', '/admin'),
+  forceSecureCookie: env.bool('STRAPI_ADMIN_FORCE_SECURE_COOKIE', true),
 });
