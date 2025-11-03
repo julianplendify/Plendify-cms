@@ -4,4 +4,6 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  url: env('PUBLIC_URL', 'https://plendify-cms-production.up.railway.app/'),
+  proxy: true, // This is crucial for Railway
 });
