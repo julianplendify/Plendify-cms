@@ -1,0 +1,21 @@
+[build]
+builder = "nixpacks"
+
+[deployment]
+start_cmd = "npm start"
+
+[environment]
+NODE_ENV = "production"
+NODE_VERSION = "18"
+
+# These will be set in Railway dashboard
+# DATABASE_URL = ""
+# HOST = "0.0.0.0"
+# PORT = "1337"
+# APP_KEYS = ""
+# API_TOKEN_SALT = ""
+# ADMIN_JWT_SECRET = ""
+# TRANSFER_TOKEN_SALT = ""
+
+[build.args]
+NODE_ENV = "production"
