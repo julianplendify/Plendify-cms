@@ -24,6 +24,16 @@
     "ImageURL": {
       "type": "string"
     },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "Author": {
       "type": "relation",
       "relation": "manyToOne",
